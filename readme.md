@@ -1,10 +1,14 @@
 # mfcd
-Program to show the dump of a mifare classic 1k card
+Program to show the dump of a mifare classic 1k card and scan for value block pattern
 
+## Example of use
 ![Output example](/doc/Example.png)
 
-## use
-./program -I file [-h] [-v] [-a to not stamp ascii carachters]
+## Use
+Use: ./mfcd -I file [-h] [-v] [-V verbose] [-a to not stamp ascii carachters] [-b scan for value block]
 
-## Future improvements
-- Value block search and print
+The verbose option also explains the notation
+
+
+## Future potential improvements
+- Make the program compatible with 4k mifare

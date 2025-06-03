@@ -203,7 +203,7 @@ int main(int argc, char *argv[])
 				printf("Trailer block keyword meanings:\nR/r->Read\nW/w->Write\nI->Increment\nD->Decrement, Transfer, Restore\n\n");
 				//fall through
            	default:
-                printf("Use: ./program -I file [-h help] [-V verbose] [-v version] [-a to not stamp ascii carachters][-b scan for value block]\n");
+                printf("Use: ./mfcd -I file [-h help] [-V verbose] [-v version] [-a to not stamp ascii carachters][-b scan for value block]\n");
                 return 0;
                 break;
             case ':':  
@@ -213,7 +213,7 @@ int main(int argc, char *argv[])
     }
     if(!path){
         printf("Input file needed\n\n");
-        printf("Use: ./program -I file [-h] [-v] [-V verbose] [-a to not stamp ascii carachters][-b scan for value block]\n");
+        printf("Use: ./mfcd -I file [-h] [-v] [-V verbose] [-a to not stamp ascii carachters][-b scan for value block]\n");
         return 0;
     }
 
