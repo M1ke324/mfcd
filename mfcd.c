@@ -1,3 +1,9 @@
+// MIT License
+// Copyright (c) 2025 M1ke324
+// Permission is granted to use, modify, and distribute this code freely.
+// See the LICENSE file for full license text.
+
+
 #include <stdint.h>
 #include <stdlib.h>
 #include <unistd.h>
