@@ -2,24 +2,41 @@
 Program to show the dump of a mifare classic 1k card and scan for value block pattern
 
 ### Compile
-```make```
+```Bash
+make
+```
 
 ### Install
-```sudo make install```
+```Bash
+sudo make install
+```
 
 ### Uninstall
-```sudo make uninstall```
+```Bash
+sudo make uninstall
+```
 
-### Remove
-```make clean```
+### Clean build files
+```Bash
+make clean
+```
 
-## Use
-Use: ./mfcd -I file [-h] [-v] [-V verbose] [-a to not stamp ascii carachters] [-b scan for value block]
+## Usage
+```Bash
+./mfcd -I file [-h] [-v] [-V] [-a] [-b]
+```
+*(if installed, you run it without `./`)*  
 
-The verbose option also explains the notation
+Options:  
+- `-I file` → input dump file  
+- `-h` → show help  
+- `-v` → print version
+- `-V` → verbose output (also explains the notation)    
+- `-a` → do not print ASCII characters  
+- `-b` → scan for value blocks  
 
-## Example of use
+## Example
 ![Output example](/doc/Example.png)
 
-## Future potential improvements
-- Make the program compatible with 4k mifare
+## Future improvements
+- Add support for MIFARE Classic 4K cards
