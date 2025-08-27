@@ -1,0 +1,58 @@
+.TH MFCD 1 "August 2025" "mfcd 0.2" "User Manual"
+.SH NAME
+mfcd \- displays the dump of a Mifare Classic 1k card and scans for value block patterns
+.SH SYNOPSIS
+.B mfcd
+-I file [OPTIONS]
+
+.SH DESCRIPTION
+The
+.B mfcd
+command reads the dump of a Mifare Classic 1k card and allows searching 
+for patterns corresponding to value blocks.
+
+It is intended as a debugging and analysis tool.
+
+.SH OPTIONS
+.TP
+.B -I file
+Specifies the input file containing the card dump (mandatory).
+.TP
+.B -h
+Displays a help message and exits.
+.TP
+.B -v
+Displays version information (currently 0.2) and exits.
+.TP
+.B -V
+Verbose mode: explains in detail the notation used in the dump.
+.TP
+.B -a
+Do not print the ASCII characters corresponding to bytes.
+.TP
+.B -b
+Activates scanning for blocks to detect value block patterns.
+
+.SH EXAMPLES
+.TP
+Analyze a dump file and display its content:
+.RS
+mfcd -I card_dump.mfd
+.RE
+.TP
+Analyze a dump file in verbose mode:
+.RS
+mfcd -I card_dump.mfd -V
+.RE
+.TP
+Analyze a dump and scan for value blocks:
+.RS
+mfcd -I card_dump.mfd -b
+.RE
+
+.SH AUTHOR
+Written by M1ke324
+
+.SH LICENSE
+This software is distributed under the MIT License.
+
