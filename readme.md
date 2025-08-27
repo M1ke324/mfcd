@@ -33,10 +33,16 @@ Options:
 - `-v` → print version
 - `-V` → verbose output (also explains the notation)    
 - `-a` → do not print ASCII characters  
-- `-b` → scan for value blocks  
+- `-b` → scan for value blocks
 
 ## Example
 ![Output example](/doc/Example.png)
+
+## Documentation
+If you need help and the program is installed, the manual page is available with:
+```bash
+man mfcd
+```
 
 ## Future improvements
 - Add support for MIFARE Classic 4K cards
