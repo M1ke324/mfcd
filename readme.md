@@ -1,8 +1,17 @@
 # mfcd
 Program to show the dump of a mifare classic 1k card and scan for value block pattern
 
-## Compile
-gcc mfcd.c -o mfcd -Wall -Wextra -pedantic
+### Compile
+```make```
+
+### Install
+```sudo make install```
+
+### Uninstall
+```sudo make uninstall```
+
+### Remove
+```make clean```
 
 ## Use
 Use: ./mfcd -I file [-h] [-v] [-V verbose] [-a to not stamp ascii carachters] [-b scan for value block]
